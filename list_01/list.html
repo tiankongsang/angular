@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <script src="js/angular.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/list.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/edit.js"></script>
+  </head>
+
+  <body ng-app="list" ng-controller="list">
+    <div ui-view>
+      <div class="box">
+        <div class="head">
+          <h1>产品列表</h1>
+        </div>
+
+        <div class="bar bar-header item-input-inset">
+          <label class="item-input-wrapper">
+            <input
+              type="search"
+              placeholder="搜索"
+              placeholder="请输入你需要查询的内容"
+              |
+              ng-model="key"
+            />
+          </label>
+        </div>
+
+
+        <div class="add">
+          <button ng-click="clickAdd()" type="button" class="btn btn-success">
+            新增产品
+          </button>
+        </div>
+
+        <div class="details" style="margin-top: 20px">
+          <div ng-if="!data.length" style="font-size: 20px">
+            没有数据请添加数据
+          </div>
+
+          <table ng-if="data.length" class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">代码</th>
+                <th scope="col">名称</th>
+                <th scope="col">描述</th>
+                <th scope="col">类别</th>
+                <th scope="col">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item  in data | filter:key">
+                <td scope="row">
+                  <a href="" ng-click="modifyData(item.id)">{{item.id}}</a>
+                </td>
+                <td ng-bind="item.name"></td>
+                <td ng-bind="item.description"></td>
+                <td ng-bind="item.category"></td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    ng-click="del(item.id)"
+                  >
+                    删除
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

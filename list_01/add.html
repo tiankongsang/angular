@@ -1,87 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>新增页面</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/edit.css" />
-    <script src="js/angular.js"></script>
-    <script src="js/angular-ui-router.js"></script>
-    <script src="js/add.js"></script>
-    <script src="js/list.js"></script>
-  </head>
 
-  <body>
-    <div class="box" ng-app="add" ng-controller="add">
-      <div>
-        <h4>新增</h4>
-      </div>
-      <form action="">
-        <div class="input-group mb-3 a" style="width: 310px">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">代码</span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="请输入代码"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-            ng-model="data1.id"
-            ng-readonly="expression"
-          />
-        </div>
-        <div class="input-group mb-3" style="width: 310px">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">名称</span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="请输入名称"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-            ng-model="data1.name"
-          />
-        </div>
-        <div class="input-group mb-3" style="width: 310px">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">描述</span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="请输入描述"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-            ng-model="data1.description"
-          />
-        </div>
-        <div class="input-group mb-3" style="width: 310px">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">类别</span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="请输入类别"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-            ng-model="data1.category"
-          />
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>新增页面</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/edit.css" />
+  <script src="js/angular.js"></script>
+  <script src="js/angular-ui-router.js"></script>
+  <script src="js/add.js"></script>
+  <script src="js/list.js"></script>
+</head>
 
-        <div class="item">
-          <button
-            type="button"
-            class="btn btn-primary btn-sm"
-            ng-click="clickAdd()"
-          >
-            添加
-          </button>
-        </div>
-      </form>
+<body>
+  <div class="box" ng-app="add" ng-controller="add">
+    <div>
+      <h4>新增</h4>
     </div>
-  </body>
+    <form action="">
+      <div class="input-group mb-3 a" style="width: 310px">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">代码</span>
+        </div>
+        <input type="text" class="form-control" placeholder="请输入代码" aria-label="Username"
+          aria-describedby="basic-addon1" ng-model="data1.id" ng-readonly="expression" />
+      </div>
+      <div class="input-group mb-3" style="width: 310px">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">名称</span>
+        </div>
+        <input type="text" class="form-control" placeholder="请输入名称" aria-label="Username"
+          aria-describedby="basic-addon1" ng-model="data1.name" />
+      </div>
+      <div class="input-group mb-3" style="width: 310px">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">描述</span>
+        </div>
+        <input type="text" class="form-control" placeholder="请输入描述" aria-label="Username"
+          aria-describedby="basic-addon1" ng-model="data1.description" />
+      </div>
+      <div class="input-group mb-3" style="width: 310px">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">类别</span>
+        </div>
+        <input type="text" class="form-control" placeholder="请输入类别" aria-label="Username"
+          aria-describedby="basic-addon1" ng-model="data1.category" />
+      </div>
+
+      <div class="item">
+        <button type="button" class="btn btn-primary btn-sm" ng-click="clickAdd()">
+          添加
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>

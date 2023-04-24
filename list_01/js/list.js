@@ -66,6 +66,6 @@ list.controller("list", function ($scope, $state, data) {
         break;
       }
     }
-      $scope.data.splice(index, 1);
+    $scope.data.splice(index, 1);
   };
 });

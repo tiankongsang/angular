@@ -1,69 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
-    />
-    <title>新增页面</title>
-    <link
-      href="https://cdn.staticfile.org/ionic/1.3.2/css/ionic.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/edit.css" />
-    <script src="https://cdn.staticfile.org/ionic/1.3.2/js/ionic.bundle.min.js"></script>
-    <script src="js/angular.js"></script>
-    <script src="js/angular-ui-router.js"></script>
-    <script src="js/add.js"></script>
-    <script src="js/list.js"></script>
-  </head>
 
-  <body>
-    <div ng-app="add" ng-controller="add">
-      <div class="bar bar-header bar-dark">
-        <div class="h1 title">新增产品</div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+  <title>新增页面</title>
+  <link href="https://cdn.staticfile.org/ionic/1.3.2/css/ionic.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/edit.css" />
+  <script src="https://cdn.staticfile.org/ionic/1.3.2/js/ionic.bundle.min.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/angular-ui-router.js"></script>
+  <script src="js/add.js"></script>
+  <script src="js/list.js"></script>
+</head>
+
+<body>
+  <div ng-app="add" ng-controller="add">
+    <div class="bar bar-header bar-dark">
+      <div class="h1 title">新增产品</div>
+    </div>
+
+    <div class="content has-header">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">代码</span>
+          <input type="text" placeholder="请输入代码" ng-model="data1.id" />
+        </label>
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">名称</span>
+          <input type="text" placeholder="请输入名称" ng-model="data1.name" />
+        </label>
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">描述</span>
+          <input type="text" placeholder="请输入描述" ng-model="data1.description" />
+        </label>
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">类别</span>
+          <input type="text" placeholder="请输入类别" ng-model="data1.category" />
+        </label>
       </div>
-
-      <div class="content has-header">
-        <div class="list">
-          <label class="item item-input item-stacked-label">
-            <span class="input-label">代码</span>
-            <input type="text" placeholder="请输入代码" ng-model="data1.id" />
-          </label>
-
-          <label class="item item-input item-stacked-label">
-            <span class="input-label">名称</span>
-            <input type="text" placeholder="请输入名称" ng-model="data1.name" />
-          </label>
-
-          <label class="item item-input item-stacked-label">
-            <span class="input-label">描述</span>
-            <input
-              type="text"
-              placeholder="请输入描述"
-              ng-model="data1.description"
-            />
-          </label>
-
-          <label class="item item-input item-stacked-label">
-            <span class="input-label">类别</span>
-            <input
-              type="text"
-              placeholder="请输入类别"
-              ng-model="data1.category"
-            />
-          </label>
-        </div>
-        <div class="padding">
-          <button
-            class="button button-block button-positive"
-            ng-click="clickAdd()"
-          >
-            添加
-          </button>
-        </div>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="clickAdd()">
+          添加
+        </button>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

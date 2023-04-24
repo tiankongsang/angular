@@ -1,90 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
-    />
-    <title>修改页面</title>
-    <link
-      href="https://cdn.staticfile.org/ionic/1.3.2/css/ionic.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/edit.css" />
-    <script src="https://cdn.staticfile.org/ionic/1.3.2/js/ionic.bundle.min.js"></script>
-    <script src="js/angular.js"></script>
-    <script src="js/angular-ui-router.js"></script>
-    <script src="js/edit.js"></script>
-    <script src="js/list.js"></script>
-  </head>
 
-  <body>
-    <div ng-app="edit" ng-controller="edit">
-      <div class="bar bar-header bar-dark">
-        <div class="h1 title">修改页面</div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+  <title>修改页面</title>
+  <link href="https://cdn.staticfile.org/ionic/1.3.2/css/ionic.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/edit.css" />
+  <script src="https://cdn.staticfile.org/ionic/1.3.2/js/ionic.bundle.min.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/angular-ui-router.js"></script>
+  <script src="js/edit.js"></script>
+  <script src="js/list.js"></script>
+</head>
+
+<body>
+  <div ng-app="edit" ng-controller="edit">
+    <div class="bar bar-header bar-dark">
+      <div class="h1 title">修改页面</div>
+    </div>
+
+    <div class="content has-header">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">代码</span>
+          <input type="text" class="form-control" placeholder="请输入代码" aria-label="Username"
+            aria-describedby="basic-addon1" ng-model="data1.id" ng-readonly="expression" />
+        </label>
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">名称</span>
+          <input type="text" class="form-control" placeholder="请输入名称" aria-label="Username"
+            aria-describedby="basic-addon1" ng-model="data1.name" />
+        </label>
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">描述</span>
+          <input type="text" class="form-control" placeholder="请输入描述" aria-label="Username"
+            aria-describedby="basic-addon1" ng-model="data1.description" />
+        </label>
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">类别</span>
+          <input type="text" class="form-control" placeholder="请输入类别" aria-label="Username"
+            aria-describedby="basic-addon1" ng-model="data1.category" />
+        </label>
       </div>
-
-      <div class="content has-header">
-        <div class="list">
-          <label class="item item-input item-stacked-label">
-            <span class="input-label">代码</span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="请输入代码"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-              ng-model="data1.id"
-              ng-readonly="expression"
-            />
-          </label>
-
-          <label class="item item-input item-stacked-label">
-            <span class="input-label">名称</span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="请输入名称"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-              ng-model="data1.name"
-            />
-          </label>
-
-          <label class="item item-input item-stacked-label">
-            <span class="input-label">描述</span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="请输入描述"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-              ng-model="data1.description"
-            />
-          </label>
-
-          <label class="item item-input item-stacked-label">
-            <span class="input-label">类别</span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="请输入类别"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-              ng-model="data1.category"
-            />
-          </label>
-        </div>
-        <div class="padding">
-          <button
-            class="button button-block button-positive"
-            ng-click="clickUpdate()"
-          >
-            修改
-          </button>
-        </div>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="clickUpdate()">
+          修改
+        </button>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

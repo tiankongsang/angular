@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+    />
     <title>新增页面</title>
     <link
       href="https://cdn.staticfile.org/ionic/1.3.2/css/ionic.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/edit.css" />
     <script src="https://cdn.staticfile.org/ionic/1.3.2/js/ionic.bundle.min.js"></script>
     <script src="js/angular.js"></script>
     <script src="js/angular-ui-router.js"></script>
@@ -15,75 +20,50 @@
   </head>
 
   <body>
-    <div class="box" ng-app="add" ng-controller="add">
-      <div>
-        <h4>新增</h4>
+    <div ng-app="add" ng-controller="add">
+      <div class="bar bar-header bar-dark">
+        <div class="h1 title">新增产品</div>
       </div>
-      <form action="">
-        <div class="input-group mb-3 a" style="width: 310px">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">代码</span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="请输入代码"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-            ng-model="data1.id"
-            ng-readonly="expression"
-          />
-        </div>
-        <div class="input-group mb-3" style="width: 310px">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">名称</span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="请输入名称"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-            ng-model="data1.name"
-          />
-        </div>
-        <div class="input-group mb-3" style="width: 310px">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">描述</span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="请输入描述"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-            ng-model="data1.description"
-          />
-        </div>
-        <div class="input-group mb-3" style="width: 310px">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">类别</span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="请输入类别"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-            ng-model="data1.category"
-          />
-        </div>
 
-        <div class="item">
+      <div class="content has-header">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">代码</span>
+            <input type="text" placeholder="请输入代码" ng-model="data1.id" />
+          </label>
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">名称</span>
+            <input type="text" placeholder="请输入名称" ng-model="data1.name" />
+          </label>
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">描述</span>
+            <input
+              type="text"
+              placeholder="请输入描述"
+              ng-model="data1.description"
+            />
+          </label>
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">类别</span>
+            <input
+              type="text"
+              placeholder="请输入类别"
+              ng-model="data1.category"
+            />
+          </label>
+        </div>
+        <div class="padding">
           <button
-            type="button"
-            class="btn btn-primary btn-sm"
+            class="button button-block button-positive"
             ng-click="clickAdd()"
           >
             添加
           </button>
         </div>
-      </form>
+      </div>
     </div>
   </body>
 </html>

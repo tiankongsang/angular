@@ -27,27 +27,32 @@ list.service("data", function () {
       id: "T001",
       name: "iPod",
       description: "iOS",
-      category: "mobile",
+      category: "📱mobile",
     },
     {
       id: "T002",
       name: "iPhone",
       description: "iOS",
-      category: "mobile",
+      category: "📱mobile",
     },
     {
       id: "T003",
       name: "iPad",
       description: "iOS",
-      category: "tablet",
+      category: "📟tablet",
     },
     {
       id: "T004",
       name: "iMac",
       description: "OS X",
-      category: "desktop",
+      category: "🖥️desktop",
     },
-    { id: "T005", name: "MacBook", description: "OS X", category: "laptop" },
+    {
+      id: "T005",
+      name: "MacBook",
+      description: "OS X",
+      category: "💻laptop"
+    },
   ];
   return data;
 });

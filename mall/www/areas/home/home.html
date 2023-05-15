@@ -1,0 +1,174 @@
+<ion-view id="home" view-title="首页" cache-view="false">
+  <!--搜索区域-->
+  <div id="headerBar" class="headerBar">
+    <div id="headerBar-bg"></div>
+    <div class="headerBar-logo">
+      <i></i>
+    </div>
+    <a class="headerBar-search"  ng-href="#">
+      <span></span>
+      <div>
+        <input  maxlength="20" autocomplete="true" value="美妆1元起 独家放价"/>
+      </div>
+    </a>
+    <a class="headerBar-login" ng-href="#">
+        <span>
+            登录
+        </span>
+    </a>
+  </div>
+  <ion-content id="home-content" class="scroll-content" scroll="false">
+    <!--头部轮播图-->
+    <ion-slide-box class="headerSlider"  auto-play="3000" >
+      <ion-slide>
+        <img ng-src="img/home/home-headerSlide-1.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img ng-src="img/home/home-headerSlide-2.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img ng-src="img/home/home-headerSlide-3.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img ng-src="img/home/home-headerSlide-4.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img ng-src="img/home/home-headerSlide-5.jpg">
+      </ion-slide>
+    </ion-slide-box>
+    <!-- 功能导航 -->
+    <nav id="nav">
+      <span ui-sref="tab.category">
+        <img ng-src="img/home/nav0.png" alt="">
+        <h2>分类查询</h2>
+      </span>
+      <span>
+        <img ng-src="img/home/nav1.png" alt="">
+        <h2>物流查询</h2>
+      </span>
+      <span>
+        <img ng-src="img/home/nav2.png" alt="">
+        <h2>购物车</h2>
+      </span>
+      <span>
+        <img ng-src="img/home/nav3.png" alt="">
+        <h2>我的Mall</h2>
+      </span>
+      <span>
+        <img ng-src="img/home/nav4.png" alt="">
+        <h2>充值</h2>
+      </span>
+      <span>
+        <img ng-src="img/home/nav5.png" alt="">
+        <h2>领券中心</h2>
+      </span>
+      <span>
+        <img ng-src="img/home/nav6.png" alt="">
+        <h2>生活团购</h2>
+      </span>
+      <span>
+        <img src="img/home/nav7.png" alt="">
+        <h2>我的关注</h2>
+      </span>
+    </nav>
+    <!--广告轮播图1-->
+    <div class="ad">
+      <ion-slide-box show-pager="true" auto-play="true" does-continue="true">
+        <ion-slide>
+          <img ng-src="img/home/home-ad-1.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img ng-src="img/home/home-ad-2.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img ng-src="img/home/home-ad-3.jpg">
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+    <!-- 掌上秒杀 -->
+    <div id="centent">
+      <div class="centent-top">
+        <span></span>
+        <h2>掌上秒杀</h2>
+        <div class="centent-time">
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+          <span>:</span>
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+          <span>:</span>
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+        </div>
+        <div class="centent-more">
+          更多>
+        </div>
+      </div>
+      <ul class="centent-bottom">
+        <li>
+          <a href="#/details/1">
+            <img ng-src="img/home/seckill_1.jpg" alt="">
+            <span class="seckill-now">￥169.00</span>
+            <span class="seckill-old">￥299.00</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img ng-src="img/home/seckill_2.jpg" alt="">
+            <span class="seckill-now">￥11.11</span>
+            <span class="seckill-old">￥39.00</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+          <img ng-src="img/home/seckill_3.jpg" alt="">
+          <span class="seckill-now">￥99.00</span>
+          <span class="seckill-old">￥199.00</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--主题街-->
+    <div class="floor">
+      <div class="floor-title">主题街</div>
+      <div class="floor-product">
+        <div class="floor-product-list floor-left">
+          <img ng-src="img/home/home-theme-3.jpg" alt="">
+        </div>
+        <div class="floor-product-list">
+          <img ng-src="img/home/home-theme-1.jpg" alt="">
+          <img ng-src="img/home/home-theme-2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!--广告轮播图2-->
+    <div class="ad" style="clear: both">
+      <ion-slide-box show-pager="true" auto-play="true" does-continue="true">
+        <ion-slide>
+          <img ng-src="img/home/home-ad-4.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img ng-src="img/home/home-ad-5.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img ng-src="img/home/home-ad-6.jpg">
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+    <!-- 超值购 -->
+    <div id="floor-1" class="floor">
+      <div class="floor-title">超值购</div>
+      <div class="floor-product">
+        <div class="floor-product-list floor-left">
+          <img ng-src="img/home/cp1.jpg" alt="">
+        </div>
+        <div class="floor-product-list">
+          <img ng-src="img/home/cp2.jpg" alt="">
+          <img ng-src="img/home/cp3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!--回到顶部的区块-->
+    <div class="back_top" ></div>
+  </ion-content>
+</ion-view>

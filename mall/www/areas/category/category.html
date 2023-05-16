@@ -1,0 +1,41 @@
+<ion-view id="category" view-title="商品分类" hide-back-button="true" cache-view="false">
+  <div class="scroll-content  has-header" scroll="false">
+    <header id="header">
+      <a class="header-center" ng-href="#">
+        <span></span>
+      </a>
+      <div class="header-right">
+        <span></span>
+      </div>
+    </header>
+    <nav id="nav">
+      <ul>
+        <li ng-class="$index==0?'nav-current':'nav-blur'" ng-repeat="item in categoryData"  ng-click="categoryLeftClick($event);getCategoryDetailData(item.typeNumber)">{{item.name}}</li>
+      </ul>
+    </nav>
+    <div id="pro">
+      <ion-content lazy-scroll>
+        <div class="pro-scroll">
+          <div class="pro-warp">
+            <div class="banner">
+              <img ng-src="img/category/banner_1.jpg" alt="">
+            </div>
+            <div class="content">
+              <div class="content-title">
+                <span>热卖分类</span>
+              </div>
+              <div class="content-body">
+                <li class="content-body-list" ng-repeat="item in categoryDetailData" ui-sref="goodsList({typeNumber:{{item.typeNumber}}})">
+                  <img image-lazy-src="{{item.src}}" alt="" image-lazy-loader="lines">
+                  <span>{{item.name}}</span>
+                </li>
+              </div>
+              </div>
+            </div>
+          </div>
+      </ion-content>
+      </div>
+    </div>
+  </ion-view>
+
+

@@ -1,0 +1,43 @@
+<ion-view id="guidePage" view-title="引导页" cache-view="false">
+  <ion-slide-box id="guideSlide" on-slide-changed="slideHasChanged($index)">
+    <ion-slide>
+        <div class="item-logo" style="background-color:  #ed577f;">
+          <a href="#">
+            Mall
+          </a>
+          <div id="tips-0" class="animate guide-show">
+            <h2 class="animated bounceInDown">理想生活</h2>
+            <li class="animated bounceInLeft">潮流服装，手机数码。</li>
+            <li class="animated bounceInRight">日用百货，家居建材。</li>
+          </div>
+        </div>
+        </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="item-logo" style="background-color:#c962ab;">
+        <a href="#">
+          Mall
+        </a>
+        <div id="tips-1" class="animate hidden">
+          <h2 class="animated bounceInDown">新人专享</h2>
+          <li class="animated bounceInLeft">388元购物礼包。 </li>
+          <li class="animated bounceInRight">邀请好友，好礼相送。</li>
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="item-logo" style="background-color: #eda057;">
+        <a href="#">
+          Mall
+        </a>
+        <div class="animate guide-show">
+          <button id='close'  ng-click="func_goHome()">立即体验</button>
+        </div>
+      </div>
+      </div>
+      </div>
+    </ion-slide>
+  </ion-slide-box>
+</ion-view>
+
+

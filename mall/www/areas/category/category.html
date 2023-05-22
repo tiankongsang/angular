@@ -1,16 +1,19 @@
 <ion-view id="category" view-title="商品分类" hide-back-button="true" cache-view="false">
   <div class="scroll-content  has-header" scroll="false">
     <header id="header">
-      <a class="header-center" ng-href="#">
-        <span></span>
-      </a>
-      <div class="header-right">
-        <span></span>
-      </div>
+      <button 0style="display: inline-block;" ng-click="aa()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+<span>美味饭菜</span>
+
+
     </header>
-    <nav id="nav">
+    <nav id="nav" ng-hide="qq">
       <ul>
-        <li ng-class="$index==0?'nav-current':'nav-blur'" ng-repeat="item in categoryData"  ng-click="categoryLeftClick($event);getCategoryDetailData(item.typeNumber)">{{item.name}}</li>
+        <li ng-class="$index==0?'nav-current':'nav-blur'" ng-repeat="item in categoryData"
+          ng-click="categoryLeftClick($event);getCategoryDetailData(item.typeNumber);aa()">{{item.name}}</li>
       </ul>
     </nav>
     <div id="pro">
@@ -25,17 +28,18 @@
                 <span>热卖分类</span>
               </div>
               <div class="content-body">
-                <li class="content-body-list" ng-repeat="item in categoryDetailData" ui-sref="goodsList({typeNumber:{{item.typeNumber}}})">
+                <a class="content-body-list" ng-repeat="item in categoryDetailData"
+                ng-href="#/details/{{item.productId}}"
+                  >
+                  <!-- <a href=""  ng-href="#/details/{{item.productId}}">aa</a> -->
                   <img image-lazy-src="{{item.src}}" alt="" image-lazy-loader="lines">
                   <span>{{item.name}}</span>
-                </li>
-              </div>
+                </a>
               </div>
             </div>
           </div>
+        </div>
       </ion-content>
-      </div>
     </div>
-  </ion-view>
-
-
+  </div>
+</ion-view>

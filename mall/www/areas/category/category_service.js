@@ -7,7 +7,7 @@ angular.module('category.service', [])
       getCategoryData: function() {
         var categoryData = [
           {
-            name: "潮流女装",
+            name: "菜单1",
             typeNumber: '100'
           },
           {
@@ -64,66 +64,117 @@ angular.module('category.service', [])
               var categoryDetailData=[];
 
         if(typeNumber==100){
-          categoryDetailData=[
+          categoryDetailData=
+          // [
+          //   {
+          //     name:"毛呢大衣",
+          //     src:"img/category/nz1.jpg",
+          //     typeNumber:'10001'
+          //   },
+          //   {
+          //     name:"羽绒服",
+          //     src:"img/category/nz2.jpg",
+          //     typeNumber:'10002'
+          //   },
+          //   {
+          //     name:"针织衫",
+          //     src:"img/category/nz3.jpg",
+          //     typeNumber:'10003'
+          //   },
+          //   {
+          //     name:"连衣裙",
+          //     src:"img/category/nz4.jpg",
+          //     typeNumber:'10004'
+          //   },
+          //   {
+          //     name:"棉服",
+          //     src:"img/category/nz5.jpg",
+          //     typeNumber:'10005'
+          //   },
+          //   {
+          //     name:"长袖T恤",
+          //     src:"img/category/nz6.jpg",
+          //     typeNumber:'10006'
+          //   },
+          //   {
+          //     name:"羊绒衫",
+          //     src:"img/category/nz7.jpg",
+          //     typeNumber:'10007'
+          //   },
+          //   {
+          //     name:"衬衫",
+          //     src:"img/category/nz8.jpg",
+          //     typeNumber:'10008'
+          //   },
+          //   {
+          //     name:"风衣",
+          //     src:"img/category/nz9.jpg",
+          //     typeNumber:'10009'
+          //   },
+          //   {
+          //     name:"皮衣",
+          //     src:"img/category/nz10.jpg",
+          //     typeNumber:'10010'
+          //   },
+          //   {
+          //     name:"休闲裤",
+          //     src:"img/category/nz11.jpg",
+          //     typeNumber:'10011'
+          //   },
+          //   {
+          //     name:"牛仔裤",
+          //     src:"img/category/nz12.jpg",
+          //     typeNumber:'10012'
+          //   }
+          // ];
+          [
             {
-              name:"毛呢大衣",
-              src:"img/category/nz1.jpg",
-              typeNumber:'10001'
+              name: '轻舞飘絮',
+              price: '288',
+              haoping: '100',
+              buy: '733',
+              productId: "4",
+              src: 'img/goodsList/goods4.jpg'
             },
             {
-              name:"羽绒服",
-              src:"img/category/nz2.jpg",
-              typeNumber:'10002'
+              name: '时竟 ',
+              price: '289',
+              haoping: '100',
+              buy: '773',
+              productId: "5",
+              src: 'img/goodsList/goods5.jpg'
             },
             {
-              name:"针织衫",
-              src:"img/category/nz3.jpg",
-              typeNumber:'10003'
+              name: '伊芙丽201筒中长',
+              price: '499',
+              haoping: '100',
+              buy: '6',
+              productId: "6",
+              src: 'img/goodsList/goods6.jpg'
             },
             {
-              name:"连衣裙",
-              src:"img/category/nz4.jpg",
-              typeNumber:'10004'
+              name: '辉华玫紫色 M',
+              price: '229',
+              haoping: '99',
+              buy: '215',
+              productId: "7",
+              src: 'img/goodsList/goods7.jpg'
             },
             {
-              name:"棉服",
-              src:"img/category/nz5.jpg",
-              typeNumber:'10005'
+              name: 'Ochirly欧时860 大红120 S',
+              price: '1323',
+              haoping: '69',
+              buy: '19',
+              productId: "8",
+              src: 'img/goodsList/goods8.jpg'
             },
             {
-              name:"长袖T恤",
-              src:"img/category/nz6.jpg",
-              typeNumber:'10006'
-            },
-            {
-              name:"羊绒衫",
-              src:"img/category/nz7.jpg",
-              typeNumber:'10007'
-            },
-            {
-              name:"衬衫",
-              src:"img/category/nz8.jpg",
-              typeNumber:'10008'
-            },
-            {
-              name:"风衣",
-              src:"img/category/nz9.jpg",
-              typeNumber:'10009'
-            },
-            {
-              name:"皮衣",
-              src:"img/category/nz10.jpg",
-              typeNumber:'10010'
-            },
-            {
-              name:"休闲裤",
-              src:"img/category/nz11.jpg",
-              typeNumber:'10011'
-            },
-            {
-              name:"牛仔裤",
-              src:"img/category/nz12.jpg",
-              typeNumber:'10012'
+              name: '烟花烫2015杂点 M现货',
+              price: '368',
+              haoping: '69',
+              buy: '28',
+              productId: "9",
+              src: 'img/goodsList/goods9.jpg'
             }
           ];
         }else{

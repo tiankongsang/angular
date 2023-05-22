@@ -35,4 +35,17 @@ angular.module('category.controller', ['category.service'])
       e.target.className='nav-current';
       $(e.target).siblings().removeClass().addClass('nav-blur');
     };
+    // 控制侧边栏
+    $scope.qq=true
+    $scope.aa=function(){
+      console.log(555);
+      if($scope.qq){
+        $scope.qq=false
+
+      }else{
+        $scope.qq=true
+      }
+
+
+    }
   });

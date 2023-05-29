@@ -1,0 +1,94 @@
+<ion-view id="details" view-title="商品详细页面" hide-back-button="true" cache-view="false">
+  <ion-content class="scroll-content" scroll="false">
+    <!-- 头部 -->
+    <header id="header">
+      <div class="header-left">
+        <div ng-click="func_goBack()">
+          <span></span>
+        </div>
+      </div>
+      <div class="header-center">
+        <span>商品详情</span>
+      </div>
+      <div class="header-right">
+        <span></span>
+      </div>
+    </header>
+    <!--头部轮播图-->
+    <ion-slide-box class="headerSlider" auto-play="300">
+      <ion-slide>
+        <img ng-src="img/details/detail08.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img ng-src="img/details/detail08.jpg">
+      </ion-slide>
+    </ion-slide-box>
+    <!-- 产品选项 -->
+    <div id="des">
+      <div class="desText">三只松鼠巨型零食大礼包30包 辣条肉脯休闲零食六一儿童节礼物送女友超6斤</div>
+      <div class="desNumber">¥128.00</div>
+    </div>
+    <div id="list">
+      <div class="yixuan">
+        <span>已选</span>
+        ★【爆卖超亿元】30包，超6斤！
+      </div>
+      <div class="yanse clearBoth">
+      <span class="floatLeft">颜色</span>
+        <div class="floatLeft" ng-repeat="item in obj_goodsInfo8.colorGroup">
+          <input id="colorRadio{{$index}}" type="radio" name="color" value="{{item.value}}"  ng-checked="$index==0?true:false" ng-init="$index==0?obj_goodsDetailInfo.color=item.value:''" ng-model="obj_goodsDetailInfo.color">
+          <span ng-class="obj_goodsDetailInfo.color==item.value?'listCurrent':''" class="listBox"><label for="colorRadio{{$index}}">{{item.name}}</label></span>
+        </div>
+    </div>
+      <!-- <div class="chicun clearBoth">
+        <span class="floatLeft">尺寸</span>
+        <div class="floatLeft" ng-repeat="item in obj_goodsInfo4.sizeGroup">
+          <input id="sizeRadio{{$index}}" type="radio" name="size" value="{{item.value}}"  ng-checked="$index==0?true:false" ng-init="$index==0?obj_goodsDetailInfo.size=item.value:''" ng-model="obj_goodsDetailInfo.size">
+          <span ng-class="obj_goodsDetailInfo.size==item.value?'listCurrent':''" class="listBox"><label for="sizeRadio{{$index}}">{{item.name}}</label></span>
+        </div>
+      </div> -->
+      <div class="shuliang clearBoth">
+        <span class="floatLeft">数量</span>
+        <div class="floatLeft">
+          <span class="listLeft floatLeft" ng-click="func_jian1()">-</span>
+          <input class="floatLeft" type="text" readonly ng-model="obj_goodsDetailInfo.number">
+          <span class="listRight floatLeft" ng-click="func_jia1()">+</span>
+        </div>
+      </div>
+    </div>
+    <div id="otherInfo">
+      <div class="songzhi">
+        <span>送至</span>
+        <p>重庆</p>
+      </div>
+      <div class="yunfei">
+        <span>运费</span>
+        <p>店铺单笔订单不满89元，货到付款运费10元，在线支付运费10元</p>
+      </div>
+      <div class="fuwu">
+        <span>服务</span>
+        <p>由三只老鼠官方旗舰店从广东广州市发货并提供售后服务</p>
+      </div>
+      <div class="tishi">
+        <span>提示</span>
+        <p>该商品支持七天无理由退货</p>
+      </div>
+    </div>
+  </ion-content>
+  <!-- 固定底边栏 -->
+  <div id="buy">
+    <div class="buyLeft">
+      <div class="guanzhu">
+        <span></span>
+        <strong>关注</strong>
+      </div>
+      <div class="gouwuche" ui-sref="cart">
+        <span></span>
+        <i id="badge" class="badge badge-assertive">{{obj_cartCount.count}}</i>
+        <strong>购物车</strong>
+      </div>
+    </div>
+    <div class="buyCenter" ng-click="func_addToCart()">加入购物车</div>
+    <div class="buyRight" ng-click="func_goHome()">立即购买</div>
+  </div>
+</ion-view>

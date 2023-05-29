@@ -32,6 +32,66 @@ angular.module('details.controller', ['details.service'])
         colorGroup: [{name: "红色", value: "red"}, {name: "蓝色", value: "blue"}],
         sizeGroup: [{name: "s", value: "s"}, {name: "m", value: "m"}, {name: "l", value: "l"}]
       };
+      $scope.obj_goodsInfo4 = {
+        goodsId: "200067",
+        description: "若昕 韩版睡衣女冬法兰绒家居服加厚珊瑚绒女人卡通甜美睡衣秋冬套装 66651K 女 M",
+        prise: "169",
+        picture: [],
+        src: "",
+        isFork: false,
+        colorGroup: [{name: "★【100%坚果】6款尊享臻果750g", value: "red"}, {name: "【全网TOP1】6+3经典款750g", value: "blue"}],
+        sizeGroup: [{name: "s", value: "s"}, {name: "m", value: "m"}, {name: "l", value: "l"}]
+      };
+      $scope.obj_goodsInfo5 = {
+        goodsId: "200067",
+        description: "若昕 韩版睡衣女冬法兰绒家居服加厚珊瑚绒女人卡通甜美睡衣秋冬套装 66651K 女 M",
+        prise: "169",
+        picture: [],
+        src: "",
+        isFork: false,
+        colorGroup: [{name: "★【爆款纯肉】1322g/12包", value: "red"}, {name: "【多肉聚汇款】1016g/9袋", value: "blue"}],
+        sizeGroup: [{name: "s", value: "s"}, {name: "m", value: "m"}, {name: "l", value: "l"}]
+      };
+      $scope.obj_goodsInfo6 = {
+        goodsId: "200067",
+        description: "若昕 韩版睡衣女冬法兰绒家居服加厚珊瑚绒女人卡通甜美睡衣秋冬套装 66651K 女 M",
+        prise: "169",
+        picture: [],
+        src: "",
+        isFork: false,
+        colorGroup: [{name: "★【爆卖超亿元】30包，超6斤！", value: "red"}, {name: "【轰趴零食】1898g/20包", value: "blue"}],
+        sizeGroup: [{name: "s", value: "s"}, {name: "m", value: "m"}, {name: "l", value: "l"}]
+      };
+      $scope.obj_goodsInfo7 = {
+        goodsId: "200067",
+        description: "若昕 韩版睡衣女冬法兰绒家居服加厚珊瑚绒女人卡通甜美睡衣秋冬套装 66651K 女 M",
+        prise: "169",
+        picture: [],
+        src: "",
+        isFork: false,
+        colorGroup: [{name: "★【100%坚果】6款尊享臻果750g", value: "red"}, {name: "【全网TOP1】6+3经典款750g", value: "blue"}],
+        sizeGroup: [{name: "s", value: "s"}, {name: "m", value: "m"}, {name: "l", value: "l"}]
+      };
+      $scope.obj_goodsInfo8 = {
+        goodsId: "200067",
+        description: "若昕 韩版睡衣女冬法兰绒家居服加厚珊瑚绒女人卡通甜美睡衣秋冬套装 66651K 女 M",
+        prise: "169",
+        picture: [],
+        src: "",
+        isFork: false,
+        colorGroup: [{name: "★【100%坚果】6款尊享臻果750g", value: "red"}, {name: "【全网TOP1】6+3经典款750g", value: "blue"}],
+        sizeGroup: [{name: "s", value: "s"}, {name: "m", value: "m"}, {name: "l", value: "l"}]
+      };
+      $scope.obj_goodsInfo9 = {
+        goodsId: "200067",
+        description: "若昕 韩版睡衣女冬法兰绒家居服加厚珊瑚绒女人卡通甜美睡衣秋冬套装 66651K 女 M",
+        prise: "169",
+        picture: [],
+        src: "",
+        isFork: false,
+        colorGroup: [{name: "★【100%坚果】6款尊享臻果750g", value: "red"}, {name: "【全网TOP1】6+3经典款750g", value: "blue"}],
+        sizeGroup: [{name: "s", value: "s"}, {name: "m", value: "m"}, {name: "l", value: "l"}]
+      };
       /**
        * 数据字典
        * name:number
